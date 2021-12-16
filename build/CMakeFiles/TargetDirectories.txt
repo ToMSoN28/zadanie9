@@ -1,3 +1,0 @@
-C:/Users/k/Desktop/zadanie9/build/CMakeFiles/asd.dir
-C:/Users/k/Desktop/zadanie9/build/CMakeFiles/edit_cache.dir
-C:/Users/k/Desktop/zadanie9/build/CMakeFiles/rebuild_cache.dir
