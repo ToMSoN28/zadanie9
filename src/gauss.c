@@ -13,13 +13,13 @@ int eliminate(Matrix *mat, Matrix *b) {
         A->data[row][n] = b->data[row][0];
     }
 
-    for (int col = 1; col <= n; col++) { /* eliminacja*/
-        for (int row = 1; row <= n; row++) {
+    for (int col = 0; col < n; col++) { /* eliminacja*/
+        for (int row = 0; row < n; row++) {
             if (row > col) {
-				if (A->data[col][col] == 0.0) return 1;
-                double c = A->data[row][col] / A->data[col][col];
-                for (int k = 1; k <= n + 1; k++) {
-                    A->data[row][k] = A->data[row][k] - c * A->data[col][k];
+				if (A->data[col-1][col-1] == 0.0) return 1;
+                double c = A->data[row-1][col-1] / A->data[col-1][col-1];
+                for (int k = 0; k < n + 1; k++) {
+                    A->data[row-1][k-1] = A->data[row-1][k-1] - c * A->data[col-1][k-1];
                 }
             }
         }

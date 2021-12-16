@@ -25,9 +25,9 @@ int backsubst(Matrix *x, Matrix *mat, Matrix *b) {
     for (int row = n - 1; row >= 1; row--) {
         sum = 0.0;
         for (int col = row + 1; col <= n; col++) {
-            sum = sum + A->data[row][col] * x->data[col][0];
+            sum = sum + A->data[row-1][col-1] * x->data[col-1][0];
         }
-        x->data[row][0] = (A->data[row][n] - sum) / A->data[row][row];
+        x->data[row-1][0] = (A->data[row-1][n] - sum) / A->data[row-1][row-1];
     }
 
     for (int row = 0; row < n; row++) /* rozdzielenie macierzy mat i b w jedną macierz */
