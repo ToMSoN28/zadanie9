@@ -16,10 +16,10 @@ int eliminate(Matrix *mat, Matrix *b) {
     for (int col = 1; col <= n; col++) { /* eliminacja*/
         for (int row = 1; row <= n; row++) {
             if (row > col) {
-                double c = A->data[row][col] * A->data[col][col];
+				if (A->data[col][col] == 0.0) return 1;
+                double c = A->data[row][col] / A->data[col][col];
                 for (int k = 1; k <= n + 1; k++) {
-                    if (A->data[col][k] == 0.0) return 1;
-                    A->data[row][k] = A->data[row][k] - c / A->data[col][k];
+                    A->data[row][k] = A->data[row][k] - c * A->data[col][k];
                 }
             }
         }
