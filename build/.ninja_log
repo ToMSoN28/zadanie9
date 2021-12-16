@@ -1,0 +1,9 @@
+# ninja log v5
+1	58	6613572483857984	CMakeFiles/asd.dir/src/gauss.c.obj	408d6b348822163d
+3	119	6613572484466346	CMakeFiles/asd.dir/src/main.c.obj	495ec9bb9f34f525
+5	129	6613572484506248	CMakeFiles/asd.dir/src/mat_io.c.obj	1ce5cb90548a930f
+1	52	6613575691322630	CMakeFiles/asd.dir/src/backsubst.c.obj	817870144c67ea5e
+52	1452	6613575705165721	asd.exe	9a8e2d4c51dd8903
+1	51	6613583422624860	CMakeFiles/asd.dir/src/gauss.c.obj	408d6b348822163d
+3	60	6613583422684706	CMakeFiles/asd.dir/src/backsubst.c.obj	817870144c67ea5e
+61	1538	6613583437335627	asd.exe	9a8e2d4c51dd8903

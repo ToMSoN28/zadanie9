@@ -1,0 +1,22 @@
+[
+{
+  "directory": "C:/Users/k/Desktop/zadanie9/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\asd.dir\\src\\main.c.obj -c C:\\Users\\k\\Desktop\\zadanie9\\src\\main.c",
+  "file": "C:\\Users\\k\\Desktop\\zadanie9\\src\\main.c"
+},
+{
+  "directory": "C:/Users/k/Desktop/zadanie9/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\asd.dir\\src\\gauss.c.obj -c C:\\Users\\k\\Desktop\\zadanie9\\src\\gauss.c",
+  "file": "C:\\Users\\k\\Desktop\\zadanie9\\src\\gauss.c"
+},
+{
+  "directory": "C:/Users/k/Desktop/zadanie9/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\asd.dir\\src\\mat_io.c.obj -c C:\\Users\\k\\Desktop\\zadanie9\\src\\mat_io.c",
+  "file": "C:\\Users\\k\\Desktop\\zadanie9\\src\\mat_io.c"
+},
+{
+  "directory": "C:/Users/k/Desktop/zadanie9/build",
+  "command": "C:\\PROGRA~1\\LLVM\\bin\\clang.exe -g -Xclang -gcodeview -O0 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -o CMakeFiles\\asd.dir\\src\\backsubst.c.obj -c C:\\Users\\k\\Desktop\\zadanie9\\src\\backsubst.c",
+  "file": "C:\\Users\\k\\Desktop\\zadanie9\\src\\backsubst.c"
+}
+]
