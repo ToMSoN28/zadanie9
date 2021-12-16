@@ -6,11 +6,11 @@
  */
 int eliminate(Matrix *mat, Matrix *b) {
     int n     = mat->r;
-    Matrix *A = createMatrix(n + 1, n);
-    for (int row = 0; row <= n; row++) /* łączenie macierzy mat i b w jedną macierz*/
+    Matrix *A = createMatrix(n, n + 1);
+    for (int row = 0; row < n; row++) /* łączenie macierzy mat i b w jedną macierz*/
     {
-        for (int col = 0; col <= n; col++) { A->data[row][col] = mat->data[row][col]; }
-        A->data[row][n + 1] = b->data[row][0];
+        for (int col = 0; col < n; col++) { A->data[row][col] = mat->data[row][col]; }
+        A->data[row][n] = b->data[row][0];
     }
 
     for (int col = 1; col <= n; col++) { /* eliminacja*/
@@ -25,10 +25,10 @@ int eliminate(Matrix *mat, Matrix *b) {
         }
     }
 
-    for (int row = 0; row <= n; row++) /* rozdzielenie macierzy mat i b w jedną macierz*/
+    for (int row = 0; row < n; row++) /* rozdzielenie macierzy mat i b w jedną macierz*/
     {
-        for (int col = 0; col <= n; col++) { mat->data[row][col] = A->data[row][col]; }
-        b->data[row][0] = A->data[row][n + 1];
+        for (int col = 0; col < n; col++) { mat->data[row][col] = A->data[row][col]; }
+        b->data[row][0] = A->data[row][n];
     }
     return 0;
 }

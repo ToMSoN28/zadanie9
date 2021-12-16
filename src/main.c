@@ -6,8 +6,8 @@
 
 int main(int argc, char **argv) {
     int res;
-    Matrix *A = readFromFile(argv[1]);
-    Matrix *b = readFromFile(argv[2]);
+    Matrix *A = readFromFile("A");
+    Matrix *b = readFromFile("b");
     Matrix *x;
 
     if (A == NULL) return -1;
@@ -28,6 +28,7 @@ int main(int argc, char **argv) {
 
     freeMatrix(A);
     freeMatrix(b);
+
 
     return 0;
 }
