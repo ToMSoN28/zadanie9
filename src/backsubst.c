@@ -20,14 +20,14 @@ int backsubst(Matrix *x, Matrix *mat, Matrix *b) {
     }*/
 
     // obliczenie elementu z jedna niewiadoma
-    x->data[n-1][0] = A->data[n][n + 1] / A->data[n][n];
+    x->data[n-1][0] = A->data[n-1][n] / A->data[n-1][n-1];
     double sum    = 0.0;
     for (int row = n - 1; row >= 1; row--) {
         sum = 0.0;
         for (int col = row + 1; col <= n; col++) {
             sum = sum + A->data[row][col] * x->data[col][0];
         }
-        x->data[row][0] = (A->data[row][n + 1] - sum) / A->data[row][row];
+        x->data[row][0] = (A->data[row][n] - sum) / A->data[row][row];
     }
 
     for (int row = 0; row < n; row++) /* rozdzielenie macierzy mat i b w jedną macierz */
